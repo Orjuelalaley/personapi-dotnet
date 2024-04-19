@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using personapi_dotnet.Models.Entities;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace personapi_dotnet.Repositories
 {
