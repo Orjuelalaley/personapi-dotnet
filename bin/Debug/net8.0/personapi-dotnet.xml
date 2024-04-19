@@ -4,6 +4,19 @@
         <name>personapi-dotnet</name>
     </assembly>
     <members>
+        <member name="M:personapi_dotnet.Controllers.EstudiosController.Edit(System.Int32,System.Int32,personapi_dotnet.Models.Entities.Estudio)">
+            <summary>
+            Actualiza los estudios de una persona.
+            </summary>
+            <param name="idProf">El ID de la profesion a actualizar.</param>
+            <param name="ccPer"> La cedula de la persona a la cual se le va a actualizar el estudio.</param>
+            <param name="estudio">El objeto estudio con los datos actualizados.</param>
+            <returns>Una respuesta sin contenido si la actualización es exitosa.</returns>
+            <response code="204">Si la actualización fue exitosa.</response>
+            <response code="400">Si los datos no son válidos.</response>
+            <response code="404">Si no se encuentra la persona o la profesión</response>
+            <response code="409">Si ocurre un problema de concurrencia.</response>
+        </member>
         <member name="M:personapi_dotnet.Controllers.PersonasController.GetAllPersonas">
             <summary>
              Obtiene todas las Personas en la base de datos   

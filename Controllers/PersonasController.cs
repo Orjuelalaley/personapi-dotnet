@@ -7,18 +7,14 @@ namespace personapi_dotnet.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonasController : ControllerBase
+    public class PersonasController(IPersonaRepository personaRepository) : ControllerBase
     {
-        private readonly IPersonaRepository personaRepository;
+        private readonly IPersonaRepository personaRepository = personaRepository;
 
-        public PersonasController(IPersonaRepository personaRepository)
-        {
-            this.personaRepository = personaRepository;
-        }
         ///<summary>
         /// Obtiene todas las Personas en la base de datos   
         /// </summary>
-  
+
         // GET: api/Personas
         [HttpGet]
         public async Task<IActionResult> GetAllPersonas()
@@ -72,6 +68,7 @@ namespace personapi_dotnet.Controllers
             {
                 return NotFound($"Persona with ID {id} not found.");
             }
+            
             existingPersona.Nombre = persona.Nombre;
             existingPersona.Apellido = persona.Apellido;
             existingPersona.Edad = persona.Edad;

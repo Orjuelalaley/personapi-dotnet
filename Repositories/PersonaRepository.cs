@@ -19,7 +19,7 @@ namespace personapi_dotnet.Repositories
 
         public async Task<Persona> GetPersonaByIdAsync(int cc)
         {
-            return await _context.Personas.FindAsync(cc);
+            return await _context.Personas.FindAsync(cc) ?? throw new KeyNotFoundException();
         }
 
         public async Task<Persona> CreatePersonaAsync(Persona persona)
