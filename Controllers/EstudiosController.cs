@@ -55,17 +55,19 @@ namespace personapi_dotnet.Controllers
             {
                 return BadRequest(ModelState);
             }
+            try
+            {
 
-            _context.Estudios.Add(estudio);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(Details), new { idProf = estudio.IdProf, ccPer = estudio.CcPer }, estudio);
+                _context.Estudios.Add(estudio);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction(nameof(Details), new { idProf = estudio.IdProf, ccPer = estudio.CcPer }, estudio);
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         // PUT: api/Estudios/5/10
-        [HttpPut("{idProf}/{ccPer}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Edit(int idProf, int ccPer, [FromBody] Estudio estudio)
         {
             if (idProf != estudio.IdProf || ccPer != estudio.CcPer)
@@ -81,14 +83,7 @@ namespace personapi_dotnet.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EstudioExists(idProf, ccPer))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
 
             return NoContent();
@@ -109,11 +104,6 @@ namespace personapi_dotnet.Controllers
             _context.Estudios.Remove(estudio);
             await _context.SaveChangesAsync();
             return NoContent();
-        }
-
-        private bool EstudioExists(int idProf, int ccPer)
-        {
-            return _context.Estudios.Any(e => e.IdProf == idProf && e.CcPer == ccPer);
         }
     }
 }

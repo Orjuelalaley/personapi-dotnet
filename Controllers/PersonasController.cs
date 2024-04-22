@@ -7,100 +7,95 @@ namespace personapi_dotnet.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonasController : Controller
+    public class PersonasController(IPersonaRepository personaRepository) : ControllerBase
     {
-        private readonly IPersonaRepository _personaRepository;
+        private readonly IPersonaRepository personaRepository = personaRepository;
 
-        public PersonasController(IPersonaRepository personaRepository)
-        {
-            _personaRepository = personaRepository;
-        }
+        ///<summary>
+        /// Obtiene todas las Personas en la base de datos   
+        /// </summary>
 
         // GET: api/Personas
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> GetAllPersonas()
         {
-            var personas = await _personaRepository.GetAllPersonasAsync();
-            return Ok(personas); // Changed to return Ok() for API consistency
+            var personas = await personaRepository.GetAllPersonasAsync();
+            return Ok(personas);
         }
-
+        /// <summary>
+        /// Obtiene una persona por su id
+        /// </summary>
+        /// <param name="id"></param>
         // GET: api/Personas/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> GetPersonaById(int id)
         {
-            var persona = await _personaRepository.GetPersonaByIdAsync(id);
+            var persona = await personaRepository.GetPersonaByIdAsync(id);
             if (persona == null)
             {
                 return NotFound();
             }
-
-            return Ok(persona); // Changed to return Ok() for API consistency
+            return Ok(persona);
         }
 
         // POST: api/Personas
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Persona persona)
+        public async Task<IActionResult> CreatePersona([FromBody] Persona persona)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var createdPersona = await _personaRepository.CreatePersonaAsync(persona);
-            return CreatedAtAction(nameof(Details), new { id = createdPersona.Cc }, createdPersona);
+            var createdPersona = await personaRepository.CreatePersonaAsync(persona);
+            return CreatedAtAction(nameof(GetPersonaById), new { id = createdPersona.Cc }, createdPersona);
         }
 
-        // PUT: api/Personas/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Edit(int id, [FromBody] Persona persona)
-        {
-            if (id != persona.Cc)
-            {
-                return BadRequest("ID mismatch");
-            }
 
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdatePersona(int id, [FromBody] Persona persona)
+        {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
+            var existingPersona = await personaRepository.GetPersonaByIdAsync(id);
+            if (existingPersona == null)
+            {
+                return NotFound($"Persona with ID {id} not found.");
+            }
+            
+            existingPersona.Nombre = persona.Nombre;
+            existingPersona.Apellido = persona.Apellido;
+            existingPersona.Edad = persona.Edad;
+            existingPersona.Genero = persona.Genero;
 
             try
             {
-                await _personaRepository.UpdatePersonaAsync(persona);
+                await personaRepository.UpdatePersonaAsync(existingPersona);
+                return NoContent();
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!await PersonaExists(persona.Cc))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return StatusCode(409, "Failed to update the persona due to concurrency issue. Please try again.");
             }
-
-            return NoContent(); // Indicates successful update without returning data
         }
 
         // DELETE: api/Personas/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeletePersona(int id)
         {
-            var persona = await _personaRepository.GetPersonaByIdAsync(id);
+            var persona = await personaRepository.GetPersonaByIdAsync(id);
             if (persona == null)
             {
                 return NotFound();
             }
-
-            await _personaRepository.DeletePersonaAsync(id);
-            return NoContent(); // Indicates successful deletion without returning data
-        }
-
-        private async Task<bool> PersonaExists(int id)
-        {
-            var persona = await _personaRepository.GetPersonaByIdAsync(id);
-            return persona != null;
+            await personaRepository.DeletePersonaAsync(id);
+            return NoContent();
         }
     }
 }
