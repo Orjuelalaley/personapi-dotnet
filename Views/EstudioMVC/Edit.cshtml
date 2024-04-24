@@ -1,40 +1,53 @@
 ﻿@model personapi_dotnet.Models.Entities.Estudio
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Estudio";
 }
 
-<h1>Edit</h1>
+<h1>Edit Estudio</h1>
 
 <h4>Estudio</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdProf" />
-            <input type="hidden" asp-for="CcPer" />
-            <div class="form-group">
-                <label asp-for="Fecha" class="control-label"></label>
-                <input asp-for="Fecha" class="form-control" />
-                <span asp-validation-for="Fecha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Univer" class="control-label"></label>
-                <input asp-for="Univer" class="form-control" />
-                <span asp-validation-for="Univer" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+
+<form asp-action="Edit" asp-route-id="@Model.IdProf" asp-route-cc="@Model.CcPer" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" asp-for="IdProf" />
+    <input type="hidden" asp-for="CcPer" />
+
+    <div class="form-group">
+        <label asp-for="Fecha" class="control-label"></label>
+        <input asp-for="Fecha" class="form-control" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
     </div>
-</div>
+
+    <div class="form-group">
+        <label asp-for="Univer" class="control-label"></label>
+        <input asp-for="Univer" class="form-control" />
+        <span asp-validation-for="Univer" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CcPerNavigation.Cc" class="control-label">CcPer</label>
+        <select asp-for="CcPer" asp-items="ViewBag.CcPer" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IdProfNavigation.Id" class="control-label">IdProf</label>
+        <select asp-for="IdProf" asp-items="ViewBag.IdProf" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
 
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

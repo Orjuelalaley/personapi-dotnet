@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("personapi-dotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1159b4f6bd3c08fd5450cd7acf8e55c3deb0395b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0896a4e1feed7b851a5a4ad50c70767271c357fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("personapi-dotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("personapi-dotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

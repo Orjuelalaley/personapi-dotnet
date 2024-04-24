@@ -66,6 +66,7 @@ namespace personapi_dotnet.Controllers.MVC
             return View(estudio);
         }
 
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id, int? cc)
         {
             if (id == null || cc == null)
@@ -91,7 +92,7 @@ namespace personapi_dotnet.Controllers.MVC
         // POST: EstudioMVC/Edit/5?cc=10
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, int cc, [Bind("IdProf,CcPer,Fecha,Univer")] Estudio estudio)
+        public async Task<IActionResult> Edit(int id, int cc, Estudio estudio)
         {
             if (id != estudio.IdProf || cc != estudio.CcPer)
             {
@@ -167,10 +168,7 @@ namespace personapi_dotnet.Controllers.MVC
             {
                 return NotFound();
             }
-
             return RedirectToAction(nameof(Index));
-        }
-
-        
+        }    
     }
 }
