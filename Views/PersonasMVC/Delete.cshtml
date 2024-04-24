@@ -37,9 +37,14 @@
         </dd>
     </dl>
     
-    <form asp-action="Delete">
+    <form asp-action="Delete" method="post">
+        <!-- Include the anti-forgery token -->
+        @Html.AntiForgeryToken()
+
+        <!-- Campo oculto para la llave primaria -->
         <input type="hidden" asp-for="Cc" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+
+        <input type="submit" value="Delete" class="btn btn-danger" />
         <a asp-action="Index">Back to List</a>
     </form>
 </div>

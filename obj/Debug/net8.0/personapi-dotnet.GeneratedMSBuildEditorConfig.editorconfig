@@ -26,24 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\codes\Arquitectura de Software\Orjuelalaley\personapi-dotnet
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcQ3JlYXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudioMVC/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb01WQ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcRGVsZXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudioMVC/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb01WQ1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcRGV0YWlscy5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudioMVC/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb01WQ1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcRWRpdC5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudioMVC/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb01WQ1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcSW5kZXguY3NodG1s
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudioMVC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb01WQ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Home/Index.cshtml]

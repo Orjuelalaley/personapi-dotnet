@@ -61,7 +61,8 @@ namespace personapi_dotnet.Controllers
                 _context.Estudios.Add(estudio);
                 await _context.SaveChangesAsync();
                 return CreatedAtAction(nameof(Details), new { idProf = estudio.IdProf, ccPer = estudio.CcPer }, estudio);
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 return BadRequest(e.Message);
             }

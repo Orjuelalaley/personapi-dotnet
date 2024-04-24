@@ -7,16 +7,10 @@ namespace personapi_dotnet.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TelefonoController : ControllerBase
+    public class TelefonoController(ITelefonoRepository telefonoRepository, IPersonaRepository personaRepository) : ControllerBase
     {
-        private readonly ITelefonoRepository _telefonoRepository;
-        private readonly IPersonaRepository _personaRepository;
-
-        public TelefonoController(ITelefonoRepository telefonoRepository, IPersonaRepository personaRepository)
-        {
-            _telefonoRepository = telefonoRepository;
-            _personaRepository = personaRepository;
-        }
+        private readonly ITelefonoRepository _telefonoRepository = telefonoRepository;
+        private readonly IPersonaRepository _personaRepository = personaRepository;
 
         // GET: api/Telefono
         [HttpGet]
