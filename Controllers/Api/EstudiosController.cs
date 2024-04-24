@@ -69,6 +69,7 @@ namespace personapi_dotnet.Controllers
         }
 
         // PUT: api/Estudios/5/10
+        [HttpPut("{idProf}/{ccPer}")]
         public async Task<IActionResult> Edit(int idProf, int ccPer, [FromBody] Estudio estudio)
         {
             if (idProf != estudio.IdProf || ccPer != estudio.CcPer)

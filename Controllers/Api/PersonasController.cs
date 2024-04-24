@@ -5,7 +5,7 @@ using personapi_dotnet.Repositories;
 
 namespace personapi_dotnet.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Api/[controller]")]
     [ApiController]
     public class PersonasController(IPersonaRepository personaRepository) : ControllerBase
     {
