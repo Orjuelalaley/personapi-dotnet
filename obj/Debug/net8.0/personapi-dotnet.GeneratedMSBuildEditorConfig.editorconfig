@@ -26,24 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\codes\Arquitectura de Software\Orjuelalaley\personapi-dotnet
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Estudios/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NcQ3JlYXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Estudios/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NcRGVsZXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Estudios/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NcRGV0YWlscy5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Estudios/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NcRWRpdC5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Estudios/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NcSW5kZXguY3NodG1s
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/EstudiosMVC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpb3NNVkNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Home/Index.cshtml]
@@ -54,44 +54,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Personas/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcQ3JlYXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/PersonasMVC/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNNVkNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Personas/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRGVsZXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/PersonasMVC/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNNVkNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Personas/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRGV0YWlscy5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/PersonasMVC/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNNVkNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Personas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcRWRpdC5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/PersonasMVC/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNNVkNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Personas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNcSW5kZXguY3NodG1s
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/PersonasMVC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYXNNVkNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Profesions/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uc1xDcmVhdGUuY3NodG1s
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/ProfesionMVC/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uTVZDXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Profesions/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uc1xEZWxldGUuY3NodG1s
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/ProfesionMVC/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uTVZDXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Profesions/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uc1xEZXRhaWxzLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/ProfesionMVC/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uTVZDXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Profesions/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uc1xFZGl0LmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/ProfesionMVC/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uTVZDXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Profesions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uc1xJbmRleC5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/ProfesionMVC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uTVZDXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Shared/Error.cshtml]
@@ -102,24 +102,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Telefono/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9cQ3JlYXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/TelefonoMVC/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9NVkNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Telefono/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9cRGVsZXRlLmNzaHRtbA==
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/TelefonoMVC/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9NVkNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Telefono/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9cRGV0YWlscy5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/TelefonoMVC/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9NVkNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Telefono/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9cRWRpdC5jc2h0bWw=
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/TelefonoMVC/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9NVkNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/Telefono/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9cSW5kZXguY3NodG1s
+[D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/TelefonoMVC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvbm9NVkNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/codes/Arquitectura de Software/Orjuelalaley/personapi-dotnet/Views/_ViewImports.cshtml]
