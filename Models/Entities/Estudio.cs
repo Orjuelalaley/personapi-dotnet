@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace personapi_dotnet.Models.Entities;
 
@@ -15,8 +13,8 @@ public partial class Estudio
     public string? Univer { get; set; }
 
     [JsonIgnore]
-    public virtual Persona CcPerNavigation { get; set; } = null!;
+    public virtual Persona? CcPerNavigation { get; set; }
 
     [JsonIgnore]
-    public virtual Profesion IdProfNavigation { get; set; } = null!;
+    public virtual Profesion? IdProfNavigation { get; set; }
 }

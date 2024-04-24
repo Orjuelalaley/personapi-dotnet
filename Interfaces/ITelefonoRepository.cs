@@ -13,4 +13,8 @@ namespace personapi_dotnet.Repositories
         Task DeleteTelefonoAsync(string num);
         Task<bool> TelefonoExists(string num);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 77c2dece361294984559953a5844cd0097db210b

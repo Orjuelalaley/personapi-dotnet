@@ -13,4 +13,8 @@ namespace personapi_dotnet.Repositories
         Task DeleteProfesionAsync(int id);
         Task<bool> ProfesionExists(int id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 77c2dece361294984559953a5844cd0097db210b

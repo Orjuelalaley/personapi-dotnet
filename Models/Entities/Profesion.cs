@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace personapi_dotnet.Models.Entities;
 
@@ -13,5 +11,5 @@ public partial class Profesion
     public string? Des { get; set; }
 
     [JsonIgnore]
-    public virtual ICollection<Estudio> Estudios { get; set; } = new List<Estudio>();
+    public virtual ICollection<Estudio> Estudios { get; set; } = [];
 }

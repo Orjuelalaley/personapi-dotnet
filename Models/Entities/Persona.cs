@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace personapi_dotnet.Models.Entities;
 
+[Table("persona")]
 public partial class Persona
 {
     public int Cc { get; set; }
@@ -12,13 +12,14 @@ public partial class Persona
 
     public string Apellido { get; set; } = null!;
 
-    public string? Genero { get; set; }
+    public string? Genero { get; set; } = null!;
 
     public int? Edad { get; set; }
 
-    [JsonIgnore]
-    public virtual ICollection<Estudio> Estudios { get; set; } = new List<Estudio>();
 
     [JsonIgnore]
-    public virtual ICollection<Telefono> Telefonos { get; set; } = new List<Telefono>();
+    public virtual ICollection<Estudio> Estudios { get; set; } = [];
+
+    [JsonIgnore]
+    public virtual ICollection<Telefono> Telefonos { get; set; } = [];
 }
